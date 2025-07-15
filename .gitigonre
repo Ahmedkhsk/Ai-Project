@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Dataset folder
+/dataset/
+
+# Model files
+*.keras
+*.h5
+*.pb
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Environments
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# VSCode settings
+.vscode/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# FastAPI auto-generated files
+*.sqlite3
+
+# PyCharm
+.idea/
+
+# Node (if you use frontend)
+node_modules/
