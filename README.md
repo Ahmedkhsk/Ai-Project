@@ -15,8 +15,6 @@ This project provides an AI-powered solution for detecting **pneumonia** in ches
 ├── trainig_model.py      # (Optional) Code used to train the CNN model
 ├── pneumonia_model.keras # Saved trained Keras model
 ├── requirements.txt      # Python dependencies file
-├── __pycache__/          # Python cache folder
-└── .gitignore            # Git ignore rules
 ```
 
 ---
@@ -26,7 +24,7 @@ This project provides an AI-powered solution for detecting **pneumonia** in ches
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/pneumonia-detector.git
+git clone https://github.com/Ahmedkhsk/pneumonia-detector.git
 cd pneumonia-detector
 ```
 
@@ -72,7 +70,7 @@ The model was trained using a binary classification approach and optimized using
 
 ## 🧪 Dataset
 
-The model was trained on publicly available chest X-ray datasets (e.g., [Kaggle Chest X-ray Pneumonia Dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)) containing labeled images for normal and pneumonia cases.
+The model was trained on publicly available chest X-ray datasets (e.g., [Kaggle Chest X-ray Pneumonia Dataset](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia/data)) containing labeled images for normal and pneumonia cases.
 
 ---
 
