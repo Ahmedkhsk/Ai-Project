@@ -4,7 +4,7 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
 
-# 1. إعداد البيانات
+
 train_path = 'train'
 val_path = 'val'
 
@@ -30,7 +30,7 @@ val_generator = val_datagen.flow_from_directory(
     class_mode='binary'
 )
 
-# 2. بناء النموذج
+
 model = Sequential([
     Conv2D(32, (3,3), activation='relu', input_shape=(150, 150, 1)),
     MaxPooling2D(2,2),
@@ -46,13 +46,13 @@ model = Sequential([
 
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
-# 3. تدريب النموذج
+
 model.fit(
     train_generator,
     epochs=10,
     validation_data=val_generator
 )
 
-# 4. حفظ النموذج
+
 model.save('pneumonia_model.keras')
 print("Model saved as 'pneumonia_model.keras'")
